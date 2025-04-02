@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Enter your name</h1>
+    <form action="/greet" method="get">
+        <input type="text" name="name" required>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    <h2 id="result"></h2>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.querySelector('input[name=name]').value;
+            fetch(`/api/hello?name=${name}`)
+                .then(response => response.json())
+                .then(data => document.getElementById('result').innerText = data.message);
+        });
+    </script>
+</body>
+</html>

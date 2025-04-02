@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FlaskerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-04-02T14:34:06.731Z" hostname="Bayrav" time="12.716">
+  <properties/>
+  <testcase name="testFormSubmission()" classname="FlaskerTest" time="12.689"/>
+  <testcase name="testHomePageTitle()" classname="FlaskerTest" time="0.026"/>
+  <system-out><![CDATA[Expected: Home Page
+Actual: Home Page
+]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Apr 02, 2025 8:04:05 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+Apr 02, 2025 8:04:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+Apr 02, 2025 8:04:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
